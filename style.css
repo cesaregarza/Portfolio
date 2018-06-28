@@ -1,0 +1,16 @@
+ .jumbotron{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.jumboblack{
+    /* background: linear-gradient(
+        rgba(20, 20, 20, 0.25),
+        rgba(20, 20, 20, 0.25)); */
+    height: 100vh;
+}
+
+.emptyspace{
+    height: 200vh;
+}
