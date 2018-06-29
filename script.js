@@ -19,5 +19,31 @@ $(function () {
     })
     .addTo(controller);
 
+  var scene3 = new ScrollMagic.Scene({
+      triggerElement: "#navtrigger",
+      triggerHook: 0.25
+    }).setClassToggle("#aboutmenav", "active")
+    .addTo(controller);
+
+  controller.scrollTo(function (newpos) {
+    TweenMax.to(window, 0.3, {
+      scrollTo: {
+        y: newpos
+      }
+    });
+  });
+
+  $(document).on("click", "a[href^='#']", function (e) {
+    var id = $(this).attr("href");
+    if ($(id).length > 0) {
+      e.preventDefault();
+
+      controller.scrollTo(id);
+
+      if (window.history && window.history.pushState) {
+        history.pushState("", document.title, id);
+      }
+    }
+  });
 
 });

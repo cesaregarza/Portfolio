@@ -36,3 +36,25 @@
  #navlinks{
      background-color: black;
  }
+
+ .panel{
+     height: 100%;
+     width: 100%;
+     position: absolute;
+ }
+
+ #navstart{
+     z-index: 500;
+ }
+
+ .nav-link{
+    color: rgba(255,255,255,.75);
+    background-color: black;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+ .active{
+     color: black!important;
+     background-color: white;
+     transition: color 0.2s, background-color 0.2s;
+ }

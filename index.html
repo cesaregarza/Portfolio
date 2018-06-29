@@ -31,38 +31,39 @@
     <div id="navtrigger"></div>
     <!-- Navbar  -->
     <nav class="navbar navbar-expand-md navbar-dark p-0" id="navstart">
-        <div class="col-6" style="background-color: transparent"></div>
-        <div class="collapse navbar-collapse col-6" id="navlinks">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item px-2">
-                    <a href="#" class="nav-link">About Me</a>
+        <div class="col-xs-0 col-md-6 col-xl-8" style="background-color: transparent"></div>
+        <div class="col-xs-12 col-md-6 col-xl-4" id="navlinks">
+            <ul class="navbar-nav ml-auto d-flex flex-sm-column flex-md-row justify-content-end">
+                <li class="nav-item px-0">
+                    <a href="#aboutme" class="nav-link" id="aboutmenav">About Me</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a href="#" class="nav-link">Portfolio</a>
+                <li class="nav-item px-0">
+                    <a href="#" class="nav-link" id="portfolionav">Portfolio</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a href="#" class="nav-link">Skills</a>
+                <li class="nav-item px-0">
+                    <a href="#" class="nav-link" id="skillsnav">Skills</a>
                 </li>
-                <li class="nav-item px-2">
-                    <a href="#" class="nav-link">Hobbies</a>
+                <li class="nav-item px-0">
+                    <a href="#" class="nav-link" id="hobbiesnav">Hobbies</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="emptyspace">Something</div>
+    <section id="aboutme" class="panel">
+
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="popper.min.js"></script>
     <script src="bootstrap4/js/bootstrap.min.js"></script>
 
     <!-- Now we load gsock -->
     <script src="greensock-js/src/minified/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="ScrollMagic/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
     <script src="script.js"></script>
 </body>
 
