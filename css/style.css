@@ -24,37 +24,60 @@
  }
 
  #myname {
-     color:white;
+     color: white;
      font-size: 3.5rem;
  }
 
  #mytitle {
-     color:white;
+     color: white;
      font-size: 2rem;
  }
 
- #navlinks{
+ #navlinks {
      background-color: black;
  }
 
- .panel{
+ .panel {
      height: 100%;
      width: 100%;
-     position: absolute;
  }
 
- #navstart{
+ #navstart {
      z-index: 500;
+     -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+     -o-transform: translateY(-100%);
+     -ms-transform: translateY(-100%);
  }
 
- .nav-link{
-    color: rgba(255,255,255,.5);
-    background-color: black;
-    transition: color 0.2s, background-color 0.2s;
-}
+ .nav-link {
+     color: rgba(255, 255, 255, .5);
+     background-color: black;
+     transition: color 0.2s, background-color 0.2s;
+ }
 
- .active{
-     color: black!important;
+ .active {
+     color: black !important;
      background-color: white;
      transition: color 0.2s, background-color 0.2s;
+ }
+
+ #pinContainer {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+
+ .panelone {
+     background-color: orange;
+     height: 100vh;
+ }
+
+ .paneltwo {
+     background-color: pink;
+     height: 100vh;
+ }
+
+ .scrollmagic-pin-spacer{
+     background-color: black;
  }
