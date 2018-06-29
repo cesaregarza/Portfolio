@@ -1,7 +1,7 @@
  .jumbotron {
      background-size: cover;
      background-position: center;
-     background-image: url(blackbackground1.jpg);
+     background-image: url(../resources/blackbackground1.jpg);
      height: 150%;
      position: relative;
      top: -100%;
@@ -48,7 +48,7 @@
  }
 
  .nav-link{
-    color: rgba(255,255,255,.75);
+    color: rgba(255,255,255,.5);
     background-color: black;
     transition: color 0.2s, background-color 0.2s;
 }
