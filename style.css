@@ -1,7 +1,7 @@
  .jumbotron {
      background-size: cover;
      background-position: center;
-     background-image: url(blackbackground.jpg);
+     background-image: url(blackbackground1.jpg);
      height: 150%;
      position: relative;
      top: -100%;
@@ -31,4 +31,8 @@
  #mytitle {
      color:white;
      font-size: 2rem;
+ }
+
+ #navlinks{
+     background-color: black;
  }
