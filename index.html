@@ -16,12 +16,24 @@
 </head>
 
 <body>
-
     <!-- The all-important jumbotron -->
-    <div class="container-fluid jumbotron">
-        
+    <div class="spacer s0"></div>
+    <div class="parallaxParent" id="parallax1">
+        <div class="d-flex flex-column align-items-center jumbotron">
+            <div class="my-auto mr-auto">
+                <h1 id="myname" class="my-0">Cesar E. Garza</h1>
+                <h6 id="mytitle" class="my-0">Web Developer</h6>
+            </div>
+        </div>
     </div>
-    <div class="emptyspace"></div>
+    <div class="spacer s1"></div>
+    <!-- We want to trigger the stickiness here -->
+    <div id="navtrigger"></div>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-md navbar-dark" id="navstart">
+        This is where the navbar will be.
+    </nav>
+    <div class="emptyspace">Something</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -30,10 +42,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="bootstrap4/js/bootstrap.min.js"></script>
-    
+
     <!-- Now we load gsock -->
     <script src="greensock-js/src/minified/TweenMax.min.js"></script>
-    <script src="ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="script.js"></script>
 </body>
 

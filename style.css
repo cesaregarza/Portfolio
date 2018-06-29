@@ -1,17 +1,32 @@
- .jumbotron{
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-image: url(background.jpg);
-}
+ .jumbotron {
+     background-size: cover;
+     background-position-y: center;
+     background-image: url(background.jpg);
+     height: 150%;
+     position: relative;
+     top: -100%;
+ }
 
-.jumboblack{
-    /* background: linear-gradient(
+ .jumboblack {
+     /* background: linear-gradient(
         rgba(20, 20, 20, 0.25),
         rgba(20, 20, 20, 0.25)); */
-    height: 100vh;
-}
+     height: 100vh;
+ }
 
-.emptyspace{
-    height: 200vh;
-}
+ .emptyspace {
+     height: 200vh;
+ }
+
+ .parallaxParent {
+     height: 100vh;
+     overflow: hidden;
+ }
+
+ #myname {
+     font-size: 3.5rem;
+ }
+
+ #mytitle {
+     font-size: 2rem;
+ }
