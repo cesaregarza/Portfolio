@@ -1,7 +1,7 @@
  .jumbotron {
      background-size: cover;
-     background-position-y: center;
-     background-image: url(background.jpg);
+     background-position: center;
+     background-image: url(blackbackground.jpg);
      height: 150%;
      position: relative;
      top: -100%;
@@ -24,9 +24,11 @@
  }
 
  #myname {
+     color:white;
      font-size: 3.5rem;
  }
 
  #mytitle {
+     color:white;
      font-size: 2rem;
  }
