@@ -43,7 +43,7 @@
  }
 
  #navstart {
-     z-index: 500;
+     z-index: 300;
      -webkit-transform: translateY(-100%);
      -moz-transform: translateY(-100%);
      -o-transform: translateY(-100%);
@@ -57,8 +57,8 @@
  }
 
  .active {
-     color: black !important;
-     background-color: white;
+     color: black                   !important;
+     background-color: white        !important;
      transition: color 0.2s, background-color 0.2s;
  }
 
@@ -68,16 +68,40 @@
      overflow: hidden;
  }
 
- .panelone {
-     background-color: orange;
+ .panelone, .paneltwo, .panelthree, .panelfour, .panelfive {
      height: 100vh;
  }
-
+.panelone{
+    background-color: orange;
+}
  .paneltwo {
      background-color: pink;
-     height: 100vh;
+ }
+ .panelthree {
+     background-color: violet;
+ }
+ .panelfour{
+     background-color: skyblue;
+ }
+ .panelfive{
+     background-color: black;
+     color: white;
  }
 
  .scrollmagic-pin-spacer{
      background-color: black;
+ }
+ 
+ footer{
+     font-size: 3em;
+     opacity: 0.7;
+     z-index: 500;
+ }
+
+ .invis{
+     background-color: transparent;
+     border: none;
+     font-size: 3em;
+     opacity: 0.7;
+     color: #444444;
  }
