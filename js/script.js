@@ -8,7 +8,7 @@ $(function () {
     of: "parallax1"
   });
   $("#footer").css("position", "fixed");
-  $("#footer").css("top", "89%");
+  $("#footer").css("bottom", 0);
   var scene = new ScrollMagic.Scene({
       triggerElement: `#navstart`,
       reverse: true,
@@ -16,7 +16,7 @@ $(function () {
     }).setPin(`#navstart`)
     .addTo(controller);
 
-  // Move navbar from its initial position to the correct one
+  // Move navbar from its initial position to the correct one, and change its transparency
   var tween0 = new TimelineMax()
     .add(TweenMax.fromTo("#navstart", 1, {
       y: "-100%"
@@ -72,14 +72,14 @@ $(function () {
     }).setClassToggle("#portfolionav", "active")
     .addTo(controller);
 
-    var scene5 = new ScrollMagic.Scene({
+  var scene5 = new ScrollMagic.Scene({
       triggerElement: "#skills",
       triggerHook: 0.25,
       duration: "100%"
     }).setClassToggle("#skillsnav", "active")
     .addTo(controller);
 
-    var scene6 = new ScrollMagic.Scene({
+  var scene6 = new ScrollMagic.Scene({
       triggerElement: "#hobbies",
       triggerHook: 0.25,
       duration: "100%"
@@ -91,7 +91,7 @@ $(function () {
   //     .fromTo("section.panel.panelone", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
   //     .fromTo("section.panel.paneltwo", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone});
 
-  //   var scene5 = new ScrollMagic.Scene({
+  //   var sceneX = new ScrollMagic.Scene({
   //     triggerElement: "#pinContainer",
   //     triggerHook: 0,
   //     duration: "300%"
@@ -103,7 +103,7 @@ $(function () {
 
   //Smooth Scroll
   controller.scrollTo(function (newpos) {
-    TweenMax.to(window, 0.5, {
+    TweenMax.to(window, 0.8, {
       scrollTo: {
         y: newpos
       }

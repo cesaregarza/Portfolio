@@ -57,8 +57,8 @@
  }
 
  .active {
-     color: black                   !important;
-     background-color: white        !important;
+     color: black !important;
+     background-color: white !important;
      transition: color 0.2s, background-color 0.2s;
  }
 
@@ -68,40 +68,107 @@
      overflow: hidden;
  }
 
- .panelone, .paneltwo, .panelthree, .panelfour, .panelfive {
+ .panelone,
+ .paneltwo,
+ .panelthree,
+ .panelfour,
+ .panelfive {
      height: 100vh;
+     overflow: hidden;
  }
-.panelone{
-    background-color: orange;
-}
+
+ .panelone {
+     background-color: white;
+ }
+
  .paneltwo {
      background-color: pink;
  }
+
  .panelthree {
      background-color: violet;
  }
- .panelfour{
+
+ .panelfour {
      background-color: skyblue;
  }
- .panelfive{
+
+ .panelfive {
      background-color: black;
      color: white;
  }
 
- .scrollmagic-pin-spacer{
+ .scrollmagic-pin-spacer {
      background-color: black;
  }
- 
- footer{
+
+ footer {
      font-size: 3em;
      opacity: 0.7;
      z-index: 500;
  }
 
- .invis{
+ .invis {
      background-color: transparent;
      border: none;
      font-size: 3em;
      opacity: 0.7;
      color: #444444;
+ }
+
+ .pictures {
+     width: 100%;
+ }
+
+ #picturediv {
+     max-height: 60vh;
+     max-width: 60vh;
+ }
+ .contentam {
+     max-width: 1000px;
+ }
+
+ /* Smartwatches or some shit */
+
+ @media (min-width: 100px) {
+     .aboutmep {
+         font-size: 0.7rem;
+         width: 100%;
+     }
+ }
+
+ /* Small devices (landscape phones, 544px and up) */
+
+ @media (min-width: 544px) {
+     .aboutmep {
+         font-size: 1rem;
+         width: 100%;
+     }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+
+ @media (min-width: 768px) {
+     .aboutmep {
+         font-size: 1rem;
+         width: 40%;
+     }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+
+ @media (min-width: 992px) {
+     .aboutmep {
+         font-size: 1.2rem;
+         width: 40%;
+     }
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+
+ @media (min-width: 1200px) {
+     .aboutmep {
+         font-size: 1.5rem;
+         width: 40%;
+     }
  }
