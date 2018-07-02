@@ -68,14 +68,14 @@ $(function () {
   var scene4 = new ScrollMagic.Scene({
       triggerElement: "#portfolio",
       triggerHook: 0.25,
-      duration: "100%"
+      duration: "80%"
     }).setClassToggle("#portfolionav", "active")
     .addTo(controller);
 
   var scene5 = new ScrollMagic.Scene({
       triggerElement: "#skills",
       triggerHook: 0.25,
-      duration: "100%"
+      duration: "50%"
     }).setClassToggle("#skillsnav", "active")
     .addTo(controller);
 

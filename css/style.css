@@ -75,28 +75,27 @@
  .panelfive {
      height: 100vh;
      overflow: hidden;
- }
-
- .panelone {
      background-color: white;
  }
 
+ /* .panelone {
+ } */
+
  .paneltwo {
-     background-color: pink;
+     height: 80vh;
  }
 
  .panelthree {
-     background-color: violet;
+     height: 50vh;
  }
 
- .panelfour {
-     background-color: skyblue;
+ /* .panelfour {
  }
 
  .panelfive {
      background-color: black;
      color: white;
- }
+ } */
 
  .scrollmagic-pin-spacer {
      background-color: black;
@@ -124,15 +123,40 @@
      max-height: 60vh;
      max-width: 60vh;
  }
- .contentam {
+ .contents {
      max-width: 1000px;
  }
+ ul{
+     list-style-type: none;
+ }
+ nav > button{
+     background-color: rgba(150,150,150,.2)!important;
+ }
+
+.hobbimg > img {
+    object-fit: cover;
+    height: 25vh;
+}
+.portimg > img {
+    object-fit: cover;
+    max-height: 25vh;
+    max-width: 99vw;
+}
 
  /* Smartwatches or some shit */
 
  @media (min-width: 100px) {
      .aboutmep {
          font-size: 0.7rem;
+         width: 100%;
+     }
+     .hobbiescont{
+         font-size: 0.8rem;
+     }
+     .hobbimg{
+         max-width: 100%;
+     }
+     .portimg{
          width: 100%;
      }
  }
@@ -153,6 +177,12 @@
          font-size: 1rem;
          width: 40%;
      }
+     .hobbimg{
+         max-width: 33%;
+     }
+     .portimg{
+         width: 50%;
+     }
  }
 
  /* Large devices (desktops, 992px and up) */
@@ -162,6 +192,9 @@
          font-size: 1.2rem;
          width: 40%;
      }
+     .hobbiescont{
+         font-size: 1rem;
+     }
  }
 
  /* Extra large devices (large desktops, 1200px and up) */
@@ -170,5 +203,8 @@
      .aboutmep {
          font-size: 1.5rem;
          width: 40%;
+     }
+     .hobbiescont{
+         font-size: 1.2rem;
      }
  }

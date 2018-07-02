@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="col-xs-0 col-md-6 col-xl-8 p-0" style="background-color: transparent"></div>
             <div class="col-xs-12 col-md-6 col-xl-4 p-0" id="navlinks">
-                <ul class="navbar-nav ml-auto d-flex flex-sm-column flex-md-row justify-content-end">
+                <ul class="navbar-nav ml-auto d-flex flex-sm-column flex-md-row justify-content-end pr">
                     <li class="nav-item px-0 text-center">
                         <a href="#aboutme" class="nav-link" id="aboutmenav">About Me</a>
                     </li>
@@ -62,9 +62,8 @@
             <h1 id="aboutmeheader">About Me</h1>
         </div>
         <!-- This is where we'll put our content -->
-        <!-- It is going to be flex-column to align our items vertically unless the screen-size is "md", where it'll swap over to flex-row. Further, we want it to take up the remainder of the panel, so we use flex-grow-1 to let it do so. We want some space between items, so we'll use justify-content-around to make sure it's evenly spaced between items. Finally, we align items on the center so we make best use of the space we have -->
         <div class="d-flex flex-column flex-md-row flex-grow-1 justify-content-center align-items-center">
-            <div class="contentam d-flex flex-column flex-md-row justify-content-md-around align-items-center shadow-lg">
+            <div class="contents d-flex flex-column flex-md-row justify-content-md-around align-items-center shadow-lg">
                 <!-- Picturediv is not able to become larger than 60% of the viewheight, and will always maintain aspect ratio as best as it can. -->
                 <div id="picturediv">
                     <img src="resources/profilepicture2.jpg" class="w-100">
@@ -83,16 +82,72 @@
         <div>
             <h1 id="portfolioheader">Portfolio</h1>
         </div>
+        <div class="d-flex flex-column flex-md-row flex-grow-1 justify-content-center align-items-center">
+            <div class="contents portimg d-flex flex-column justify-content-md-around align-items-center shadow-lg">
+                <img src="resources/sunsandsurfcart.png">
+                SunSandSurf
+            </div>
+        </div>
     </section>
     <!-- /Portfolio Section -->
     <!-- Skills Section -->
-    <section id="skills" class="panel panelthree row d-flex flex-row m-0">
-        <h1 id="skillsheader">Skills</h1>
+    <section id="skills" class="panel panelthree d-flex flex-column m-0">
+        <div>
+            <h1 id="skillsheader">Skills</h1>
+        </div>
+        <div class="d-flex flex-column flex-md-row flex-grow-1 justify-content-center align-items-center">
+            <ul class="contents d-flex flex-column shadow-lg pr-5">
+                <li>
+                    HTML 5
+                    <i class="fab fa-html5 fa-sm"></i>
+                </li>
+                <li>
+                    CSS 3
+                    <i class="fab fa-css3-alt fa-sm"></i>
+                </li>
+                <li>
+                    JavaScript
+                    <i class="fab fa-js-square fa-sm"></i>
+                </li>
+                <li>
+                    Git
+                    <i class="fab fa-git-square fa-sm"></i>
+                </li>
+                <li>
+                    Vector Calculus
+                </li>
+                <li>
+                    Number Theory
+                </li>
+                <li>
+                    Probability
+                </li>
+            </ul>
+        </div>
     </section>
     <!-- /Skills Section -->
     <!-- Hobbies Section -->
-    <section id="hobbies" class="panel panelfour row d-flex flex-row m-0">
-        <h1 id="hobbiesheader">Hobbies</h1>
+    <section id="hobbies" class="panel panelfour d-flex flex-column m-0">
+        <div>
+            <h1 id="hobbiesheader">Hobbies</h1>
+        </div>
+        <div class="d-flex flex-column flex-md-row flex-grow-1 justify-content-center align-items-center">
+            <div class="contents hobbiescont d-flex flex-column flex-md-row justify-content-md-around shadow-lg">
+                <div class="d-flex flex-column hobbimg">
+                    <img src="resources/penrose.JPG" class="w-100">
+                    <span class="p-2">Recreational Mathematics</span>
+                </div>
+                <div class="d-flex flex-column hobbimg">
+                    <img src="resources/stattherm.jpg" class="w-100">
+                    <span class="p-2">Quantum Mechanics / Statistical Thermodynamics</span>
+                </div>
+                <div class="d-flex flex-column hobbimg">
+                    <img src="resources/writing.jpg" class="w-100">
+                    <span class="p-2">Writing</span>
+                </div>
+            </div>
+
+        </div>
     </section>
     <!-- /Hobbies Section -->
     <!-- Sticky Contact Footer -->
